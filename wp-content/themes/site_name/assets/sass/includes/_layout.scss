@@ -1,0 +1,45 @@
+//Bourbon Grid (wrap each section in <section> tags and add class col-# to inner divs)
+// section {
+//     @include outer-container;
+//     max-width: 100% !important;
+// }
+// .col-11 {
+//     @include span-columns(11);
+// }
+// .col-10 {
+//     @include span-columns(10);
+// }
+// .col-9 {
+//     @include span-columns(9);
+// }
+// .col-8 {
+//     @include span-columns(8);
+// }
+// .col-7 {
+//     @include span-columns(7);
+// }
+// .col-6 {
+//     @include span-columns(6);
+// }
+// .col-5 {
+//     @include span-columns(5);
+// }
+// .col-4 {
+//     @include span-columns(4);
+// }
+// .col-3 {
+//     @include span-columns(3);
+// }
+// .col-2 {
+//     @include span-columns(2);
+// }
+// .col-1 {
+//     @include span-columns(1); 
+// }
+
+//Hotfix for bourbon layout
+// .col-2:nth-of-type(2n),
+// .col-4:nth-of-type(3n),
+// .col-3:nth-of-type(4n) {
+//     margin-right: 0;
+// }
