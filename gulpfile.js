@@ -4,7 +4,7 @@ var gulp = require( 'gulp' ),
     source = require( 'vinyl-source-stream' );
 $ = require( 'gulp-load-plugins' )();
 
-var assets = './wp-content/themes/site_name/assets';
+var assets = './wp-content/themes/gigabit/assets';
 var config = {
     sassDir: assets + '/sass',
     jsDir: assets + '/js',
@@ -53,7 +53,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     browsersync({
-        proxy: "http://localhost/site_name/"
+        proxy: "http://localhost/gigabit/"
     });
     gulp.watch( config.sassDir + '/**/*.scss', [ 'styles' ]);
     gulp.watch( config.jsDir + '/**/*.js', [ 'scripts' ]);

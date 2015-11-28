@@ -1,0 +1,25 @@
+/**
+* THEME SASS
+*/
+
+// Bourbon / Neat
+@import "../../../../../bower_components/bourbon/app/assets/stylesheets/bourbon.scss";
+@import "../../../../../bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+// Fontawesome
+//@import "../../../../../bower_components/fontawesome/css/font-awesome.min.css";
+
+// Variables
+@import "includes/_variables.scss";
+
+// Layout
+@import "includes/_layout.scss";
+
+// Header, Navigation, and Footer
+@import "includes/_header.scss";
+@import "includes/_navigation.scss";
+@import "includes/_footer.scss";
+
+// Content
+@import "includes/_content.scss";
+

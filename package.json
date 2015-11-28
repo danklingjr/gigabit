@@ -1,5 +1,5 @@
 {
-  "name": "site_name",
+  "name": "gigabit",
   "version": "1.1.0",
   "description": "",
   "main": "gulpfile.js",
@@ -26,6 +26,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "tower <dev@towermarketing.net>",
+  "author": "dan <danielklingjr@gmail.com>",
   "license": "MIT"
 }

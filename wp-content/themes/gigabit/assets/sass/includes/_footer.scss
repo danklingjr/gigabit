@@ -1,0 +1,45 @@
+.footer--inner{
+	padding: em(40) 10%;
+	position: relative;
+    z-index: 3;
+}
+.footer--about{
+	width: 40%;
+	max-width: 450px;
+	float: left;
+}
+.footer--branding{
+	width: 185px;
+	float: right;
+	img{
+		width: 100%;
+	}
+}
+.site-footer{
+	background-color: #000;
+	padding: em(20) 10%;
+	position: relative;
+    z-index: 3;
+}
+.copyright,
+.links{
+	font-size: em(11);
+	color: #fff;
+	a{
+		color: #fff;
+	}
+}
+.copyright{
+	float: left;
+}
+.links{
+	float: right;
+	a{
+		margin-left: 20px;
+		text-decoration: none;
+		&:hover,
+		&:focus{
+			text-decoration: underline;
+		}
+	}
+}

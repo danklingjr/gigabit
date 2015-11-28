@@ -1,0 +1,349 @@
+.site-inner{
+	position: relative;
+	z-index: 3;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+}
+.content{
+	article{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.section--black{
+	background-color: #000;
+	padding: em(40) 5%;
+	text-align: center;
+	h2,
+	h3,
+	p{
+		color: #fff;
+		width: 90%;
+		max-width: em(700);
+		margin: 0 auto;
+	}
+	h2{
+		margin-bottom: 20px;
+		font-family: $primaryFontAlt;
+		font-size: em(21);
+	}
+	p{
+		font-size: em(14);
+		margin-bottom: 20px;
+	}
+}
+.section--blue{
+	background-color: $blue;
+	h2,
+	h3,
+	h4,
+	p,
+	.button{
+		color: #fff;
+	}
+	h2{
+		margin-bottom: 20px;
+		font-family: $primaryFontAlt;
+		font-size: em(21);
+	}
+	p{
+		font-size: em(14);
+		margin-bottom: 30px;
+	}
+}
+.button{
+	border: 2px solid #fff;
+	background-color: transparent;
+	padding: 5px 40px;
+	text-decoration: none;
+	&:hover,
+	&:focus{
+		background-color: $blue;
+	}
+}
+.button--dark{
+	color: #000;
+	border: 1px solid #000;
+}
+.community--lineup{
+	h3{
+		background-color: $blue;
+		font-family: $primaryFontLight;
+		font-weight: 300;
+		font-size: em(28);
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+		padding: em(15);
+		margin-bottom: 0;
+	}
+}
+.community--home{
+	position: relative;
+	height: 450px;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	img{
+		max-width: 800px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translatey(-50%) translatex(-50%);
+	}
+}
+.community--york{
+	background-image: url(../images/york.jpg);
+	img{
+		max-width: 556px;
+	}
+}
+.community--hanover{
+	background-image: url(../images/hanover.jpg);
+	img{
+		max-width: 475px;
+	}
+}
+.community--pottstown{
+	background-image: url(../images/pottstown.jpg);
+	img{
+		max-width: 800px;
+	}
+}
+.community--ephrata{
+	background-image: url(../images/ephrata.jpg);
+	img{
+		max-width: 450px;
+	}
+}
+.community--doylestown{
+	background-image: url(../images/doylestown.jpg);
+	img{
+		max-width: 695px;
+	}
+}
+.community--reading{
+	background-image: url(../images/york.jpg);
+}
+
+.section--content{
+	padding: em(40) 10%;
+}
+.page__branding{
+	width: 33.333333%;
+	float: left;
+	padding-right: 5%;
+	margin-top: -100px;
+	@media screen and (min-width: em(1650)){
+		margin-top: -200px;
+	}
+	h2{
+		font-size: em(21);
+		margin-top: 40px;
+	}
+	p{
+		font-size: em(14);
+	}
+}
+.page__text{
+	width: 66.666666%;
+	float: right;
+	h2{
+		font-size: em(21);
+	}
+	p{
+		font-size: em(14);
+	}
+	form{
+		input,
+		textarea{
+			border: 1px solid #000;
+		}
+		div{
+			margin-bottom: 20px;
+			input{
+				width: 49%;
+				float: left;
+				&:nth-of-type(2n){
+					margin-left: 2%;
+				}
+			}
+			textarea{
+				height: 300px;
+			}
+		}
+	}
+}
+
+.about__logo--wrap{
+	border: 1px solid #E3E3E3;
+	padding: 10px;
+	div{
+		background-color: #E3E3E3;
+		padding: 40px;
+		img{
+			width: 100%;
+		}
+	}
+}
+.faqs{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	div{
+		flex: auto;
+		width: 50%;
+		padding: 10px;
+		h2{
+			font-size: em(21);
+		}
+		p{
+			font-size: em(14);
+		}
+	}
+}
+
+
+
+
+/*! ==========================================================================
+// Helper classes
+// =========================================================================*/
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/*! Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
+// For best results, use your favorite clearfix here.
+// -------------------------------------------------------------- */
+.group:before, 
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1  // For IE 6/7 (trigger hasLayout) ;
+}
+
+/*! ==========================================================================
+// Print styles
+// =========================================================================*/
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important /* Black prints faster: h5bp.com/s */;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    // Don't show links for images, or javascript/internal links
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group /* h5bp.com/t */;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
